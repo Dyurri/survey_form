@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SURVEY FORM</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title">SURVEY FORM</h1>
+<p id="description">Please fill out this form with the required information: </p>
+<form id="survey-form"> 
+  <fieldset>
+  <label id="name-label">Enter Your Name: <input placeholder="ex. Juan A. Dela Cruz" id="name" name="name" type:"text" required/>
+  </label><br>
+  <label id="email-label">Enter Your E-mail: <input placeholder="ex. juanDC@gmail.com" id="email" name="email" type="email" required/></label><br>
+  <label id="number-label">Enter Your Age (yrs): <input placeholder="18" type="number" id="number" name="age" min="13" max="120" required/>
+  </label><br><br>
+  
+  <select id="dropdown">
+    <option value="">(status)</   option>
+    <option value="1">Single</option>
+    <option value="2">Married</option>
+    <option value="3">Widow/Widower</option>
+    <option value="3">Separated/Divorced</option>
+  </select><br><br>
+  <label for="filipino"><input value="1" id="filipino" type="radio" name="nationality" class="inline" checked /> Filipino</label>
+        <label for="foreigner"><input value="2" id="foreigner" type="radio" name="nationality" class="inline" /> Foreigner</label><br>
+       
+        <p>If <i>Foreigner</i>, answer the question: <b>Why did you choose the Philippines as your travel destination?</b><br><br>
+        <textarea id="reason" name="reason" rows="5" cols="30" placeholder="I chose the Philippines because..."></textarea>
+         <p><b>Check the box/es if you have the following: </b></p>
+        <input type="checkbox" id="passport" name="passport" value="passport">
+  <label for="vehicle1"> Passport</label><br>
+  <input type="checkbox" id="prc" name="prc" value="prc">
+  <label for="prc"> PRC</label><br><input type="checkbox" id="id" name="id" value="id">
+  <label for="id"> National ID</label><br></fieldset><br>
+        <input type="submit" value="Submit" id="submit" />
+      
+
+  </form>
+  
+  </body>
+</html>
